@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/wikipedia.ico" /> <!--add a proper favicon-->
     <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
-    <link rel="stylesheet" type="text/CSS" href="css/style.production.css">
+    <link rel="stylesheet" type="text/CSS" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
@@ -50,7 +50,6 @@
                 <li role="presentation">
                     <a href="tel:+1 270 350 2875" aria-label="phone-nuimber">1-270-350-2875</a><br>
                 </li>
-                <!--add skype information when an account is created-->
                 <br>
                 <li role="presentation">
                     <a href="mailto:ajackonski1@gmail.com">Send me an email!</a>
@@ -59,19 +58,29 @@
         </ul>
     </div>
 
-    <div class="contact-message">
-        <form action="mailto:ajackonski1@gmail.com" method="post" enctype="multipart/form-data" id="contact-form">
-            <label class="standard-label" for="contact-email">Email: </label>
-            <input type="email" id="contact-email">
-
-            <label class="standard-label" for="contact-tel">Telephone: </label>
-            <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="contact-tel">
-
-            <label class="standard-label" for="contact-message">Message: </label>
-            <textarea maxlength="240" required id="contact-message"></textarea>
-            <input type="submit" value="Send message">
+    <div class="contact-form">
+        <form method="post" action="messages.php">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
         </form>
-    </div>
+      </div>
     <footer class="page-footer">
         <div class="page-footer__item">
             <p>
