@@ -44,6 +44,7 @@ a {
 a:hover, a:focus {
     text-decoration: none;
     cursor: pointer;
+    font-weight: 50px;
   }
 
 a:visited {
@@ -81,6 +82,23 @@ input[type=submit]:hover {
   background-color: gray;
 }
 
+.contact-header {
+  padding: 0px 0px 0px 20px;
+}
+
+.simply{
+  text-align: center;
+  font-weight: 700;
+}
+
+.contact {
+  margin-bottom: 5px;
+}
+
+.contact li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
  
 .contact-form {
   border-radius: 5px;
